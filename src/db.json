@@ -1,0 +1,22 @@
+{
+  "equipos": [
+    {
+      "id": 10,
+      "nombre": "Los pedritos",
+      "colores": ["azul", "naranja"],
+      "presidente": "Pedro P."
+    },
+    {
+      "id": 11,
+      "nombre": "Los marianos",
+      "colores": ["blanco", "negro"],
+      "presidente": "Maria M."
+    },
+    {
+      "id": 12,
+      "nombre": "Los juanes",
+      "colores": ["rojo", "blanco"],
+      "presidente": "Juan J."
+    }
+  ]
+}
