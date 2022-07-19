@@ -12,7 +12,7 @@ const Equipos = () => {
 
   React.useEffect(() => {
     if(!equipos){
-      axios.get(`http://localhost:3000/equipos`)
+      axios.get(`http://172.16.114.134:4000/equipos`)
         .then((res) => {
           setEquipos(res.data)
         })
@@ -52,11 +52,13 @@ const Equipos = () => {
 
   // actualizaciones sincronas
   const esFav = (id) => {
-    let exists = favoritos.filter((el) => el.id === id);
-    if(exists.length > 0){
-      return true
-    } else{
-      return false
+    if(favoritos){
+      let exists = favoritos.filter((el) => el.id === id);
+      if(exists.length > 0){
+        return true
+      } else{
+        return false
+      }
     }
   }
   console.log({favoritos})
